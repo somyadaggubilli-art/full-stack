@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 & CSS Webpage</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#677ccf;
+    color: white;
+    padding: 20px 40px;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+.hero{
+    background:#b1b389;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:white;
+    color:#0d6efd;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.hero button:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+main{
+    flex:3;
+}
+
+aside{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card button{
+    margin-top:10px;
+    padding:10px 20px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.contact{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.contact button{
+    padding:10px 20px;
+    background:#198754;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome </h1>
+    
+<nav>
+    <a href="#hero">Home</a> |
+    <a href="#hero">About</a> |
+    <a href="#cards">Services</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section id="hero" class="hero">
+    <h2>Welcome to Our Website</h2>
+    <p>Learn HTML5 and CSS with beautiful webpage designs.</p>
+    <button>Get Started</button>
+</section>
+
+<div class="container">
+
+<main id="cards">
+
+<section>
+<h2 style="margin-bottom:20px;">Our Services</h2>
+
+<div class="cards">
+
+<article class="card">
+<img src="https://via.placeholder.com/300x180" alt="Web Design">
+<h3>Web Design</h3>
+<p>Create attractive and responsive websites.</p>
+<button>Read More</button>
+</article>
+
+<article class="card">
+<img src="https://via.placeholder.com/300x180" alt="HTML5">
+<h3>HTML5</h3>
+<p>Build modern webpages using  HTML5 tags.</p>
+<button>Read More</button>
+</article>
+
+<article class="card">
+<img src="https://via.placeholder.com/300x180" alt="CSS">
+<h3>CSS Styling</h3>
+<p>Design webpages with colors, layouts, and animations.</p>
+<button>Read More</button>
+</article>
+
+</div>
+
+</section>
+
+</main>
+
+<aside>
+<h2>Latest News</h2>
+<p> ->HTML5 introduces semantic elements.</p>
+<p> ->CSS makes webpages beautiful.</p>
+<p> ->Responsive design improves user experience.</p>
+</aside>
+
+</div>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Message</label>
+<textarea rows="5" placeholder="Enter your message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>&copy; 2026 My HTML5 Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
