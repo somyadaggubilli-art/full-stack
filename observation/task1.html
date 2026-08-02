@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Information Portal</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>College Information Portal</h1>
+        <p>Welcome to our College Information Portal.</p>
+         <nav>
+        <a href="#about">About</a> |
+        <a href="#students">Students</a> |
+        <a href="#registration">Registration</a> |
+        <a href="#media">Media</a>
+    </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <article>
+
+            <h2>About Our College</h2>
+
+            <p>
+                Our college provides quality education in various engineering disciplines.
+                We encourage innovation, research, and skill development.
+            </p>
+
+            <h3>Text Formatting</h3>
+
+            <p><b>Bold Text</b></p>
+            <p><i>Italic Text</i></p>
+            <p><u>Underlined Text</u></p>
+            <p>H<sub>2</sub>O (Subscript)</p>
+            <p>X<sup>2</sup> (Superscript)</p>
+
+            <h3>Departments (Ordered List)</h3>
+
+            <ol>
+                <li>Computer Science & Engineering(CSE)</li>
+                <li>CSE(Artificial Intelligence & Machine Learning)</li>
+                <li>Electronics(ECE)</li>
+                <li>Mechanical(MECH)</li>
+                <li>Chemical</li>
+            </ol>
+
+            <h3>Facilities (Unordered List)</h3>
+
+            <ul>
+                <li>Library</li>
+                <li>Computer Labs</li>
+                <li>Sports </li>
+                <li>Hostel</li>
+            </ul>
+
+            <h3>Useful Links</h3>
+
+            <a href="https://collegedunia.com/college/12825-anil-neerukonda-institute-of-technology-and-sciences-anits-visakhapatnam" >Collegedunia</a><br><br>
+
+            <a href="https://anits.edu.in/home.php" target="_blank" target="_blank"> College Website </a>
+
+        </article>
+    </section>
+
+    <!-- Student Details -->
+    <section id="students">
+
+        <h2>Student Details</h2>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>CSE</td>
+                <td>rahul@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>CSM(AI/ML)</td>
+                <td>priya@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Kavya</td>
+                <td>ECE</td>
+                <td>kavya@gmail.com</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <h2>College Logo</h2>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcROD42suvR6-hpEEnMWkkjPQnY5VeJp5Xh3noBIbkw&s=10" alt="College Logo" width="150">
+
+        <h2>College Campus</h2>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PRvwUsxDlGZVQ4hBoZemH733djFDDgenJv5K37wRpg&s=10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PRvwUsxDlGZVQ4hBoZemH733djFDDgenJv5K37wRpg&s=10" alt="College Campus" width="400"></a>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ydlXlQpJSiSirYWhYiuXb2MjcK5ij26ZYDwOdNH7OciMvXwbjfLi6zr-&s=10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ydlXlQpJSiSirYWhYiuXb2MjcK5ij26ZYDwOdNH7OciMvXwbjfLi6zr-&s=10" alt="Anits Campus" width="400"></a>
+
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+
+        <h2>Student Registration Form</h2>
+
+        <form>
+
+            <label>Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name:"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email" placeholder="enter your email:"><br><br>
+
+            <label>Password:</label><br>
+            <input type="password"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date"><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="16" max="40"><br><br>
+
+            <label>Programming Skill Level:</label><br>
+            <input type="range" min="0" max="100"><br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender"> <label>Men</label>
+            <input type="radio" name="gender"> <label>Female</label>
+            <input type="radio" name="gender"> <label>Other</label>
+
+            <br><br>
+
+            <label>Hobbies:</label><br>
+
+            <input type="checkbox"> <label>Reading</label>
+            <input type="checkbox"> <label>Coding</label>
+            <input type="checkbox"> <label>Sports</label>
+            <input type="checkbox"> <label>Music</label>
+
+            <br><br>
+
+            <label>Branch:</label><br>
+
+            <select>
+                <option>CSE</option>
+                <option>CSM(AI/ML)</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+            </select>
+
+            <br><br>
+
+            <label>Comments:</label><br>
+
+            <textarea rows="5" cols="40"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </section>
+
+    <!-- Audio & Video -->
+    <section id="media">
+
+        <h2>Some Audio</h2>
+
+        <audio controls>
+            <source src="media/song.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <h2>College Video</h2>
+
+        <video width="600" controls>
+            <source src="media/clg video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+    </section>
+    <!-- Iframe -->
+    <section>
+        <h2>Anits Website (Iframe)</h2>
+
+        <iframe src="https://anits.org/"
+                width="600"
+                height="500">
+        </iframe>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Anits College Information Portal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
