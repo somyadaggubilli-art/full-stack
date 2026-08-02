@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Webpage</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#ba916e;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#daea28;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:20px;
+            background:white;
+        }
+
+        img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        h2{
+            color:#207563;
+            margin-top:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        ul{
+            margin-left:25px;
+            margin-top:10px;
+        }
+
+        form{
+            margin-top:20px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+        }
+
+
+        button{
+            background:#0077cc;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#34a300;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+        select{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>A Simple Static Webpage Using HTML Components</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <img src="https://via.placeholder.com/900x350" alt="placeholder image">
+
+    <h2>About Us</h2>
+    <p>
+        we are a team of passionate web developers and designers dedicated to
+        creating beautiful and functional websites. Our goal is to provide top-notch
+        services ro our clients and help them achieve their online presence effectively.
+    </p>
+    <br>
+
+    <button>Learn More</button>
+
+    <h2>Our Services</h2>
+
+    <ul>
+        <li>Web Developmwnt</li>
+        <li>HTML & CSS Development</li>
+        <li>Responsive Websites</li>
+        <li>UI Design</li>
+
+    </ul>
+
+    <h2>info about our services</h2>
+
+    <table>
+        <tr>
+            <th>course</th>
+            <th>Duration</th>
+            <th>Fee</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>1 Month</td>
+            <td>$50</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>1 Month</td>
+            <td>$60</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>2 Months</td>
+            <td>$120</td>
+        </tr>
+    </table>
+
+    <h2>select a course </h2><br>
+
+    <label for ="courses">choose a course:</label>
+    <select id="courses" name="courses">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <label for ="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for ="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for ="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 My Static Website | Designed using HTML Components</p>
+</footer>
+
+</body>
+</html>
