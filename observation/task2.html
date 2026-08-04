@@ -12,7 +12,6 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f4f4;
 }
-ctx 
 
 /* Header */
 header{
@@ -161,20 +160,20 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
 // Rectangle
-ctx.fillStyle = "blue";
+ctx.fillStyle = "green";
 ctx.fillRect(20,20,120,70);
 
 // Circle
 ctx.beginPath();
 ctx.arc(220,55,35,0,2*Math.PI);
-ctx.fillStyle="red";
+ctx.fillStyle="yellow";
 ctx.fill();
 
 // Line
 ctx.beginPath();
 ctx.moveTo(300,20);
 ctx.lineTo(450,90);
-ctx.strokeStyle="green";
+ctx.strokeStyle="purple";
 ctx.lineWidth=4;
 ctx.stroke();
 
