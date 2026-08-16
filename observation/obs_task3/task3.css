@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  max-width: 500px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 250px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Visually indicates completed tasks */
+.completed-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.empty-message {
+  color: gray;
+  font-style: italic;
+}
