@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Generator</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <h1>Student Profile Generator</h1>
+
+  <!-- User Input Form -->
+  <div class="form-container">
+    <div class="input-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="">
+    </div>
+
+    <div class="input-group">
+      <label for="rollNo">Roll No:</label>
+      <input type="text" id="rollNo" placeholder="">
+    </div>
+
+    <div class="input-group">
+      <label for="department">Department:</label>
+      <input type="text" id="department" placeholder="">
+    </div>
+
+    <div class="input-group">
+      <label for="cgpa">CGPA:</label>
+      <input type="number" step="0.01" id="cgpa" placeholder="">
+    </div>
+
+    <button id="generateBtn">Generate Profile</button>
+  </div>
+
+  <!-- Container for dynamically generated profile -->
+  <div id="profileContainer"></div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
