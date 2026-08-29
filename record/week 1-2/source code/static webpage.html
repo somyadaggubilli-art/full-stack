@@ -3,115 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic HTML5 Web Page</title>
+    <title>Static Webpage </title>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Welcome to the Webpage</h1>
-        <p>A page only with HTMLE semantic concepts</p>
-        
-        <!-- Primary Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#article">Featured Article</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#contact">Contact Form</a></li>
-            </ul>
-        </nav>
+    <table>
+        <tr>
+            <td>
+                <img src="https://th.bing.com/th/id/OIP.90HbtmH2qMVgJ7luemP9UQHaHa?w=164&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" width="60" height="50">
+            </td>
+            <td>
+                <h1>Department of CSM(Artifical Intelligence & Machine Learning)</h1>
+            </td>
+        </tr>
+    </table>
+    <h2>Student-Registration portal</h2>
+    <hr>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="#about">About</a> | 
+        <a href="#courses">Courses</a> | 
+        <a href="#register">Register</a>
+    </nav>
     </header>
-
     <hr>
 
-    <!-- Main Content Area -->
-    <main>
+    <!-- About Section -->
+    <section id="about">
+        <h3>About the Portal</h3>
+        <p>This is a <b>static webpage</b> designed using fundamental <i>HTML components</i> such as headings, tables, forms, and lists.
+        Here we can fill the students details but it is only Static.</p>
+    </section>
 
-        <!-- Article Section -->
-        <article id="article">
-            <header>
-                <h2>Understanding Semantic HTML5</h2>
-                <p>learn the basic <strong>HTML5</strong> concepts.</p>
-            </header>
+    <!-- Courses List Section -->
+    <section id="courses">
+        <h3>Available Courses</h3>
+        <h4>Front-End Modules (Unordered List)</h4>
+        <ul>
+            <li>HTML5 Structure</li>
+            <li>CSS3 Styling</li>
+            <li>JavaScript Fundamentals</li>
+        </ul>
 
-            <section>
-                <h3>Why Semantics Matter?</h3>
-                <p>Semantic tags help search engines, screen readers, and developers understand the purpose of web content without relying purely on styled <code>&lt;div&gt;</code> tags.</p>
+        <h4>Learning Steps (Ordered List)</h4>
+        <ol>
+            <li>Learn basic syntax</li>
+            <li>Build static layouts</li>
+            <li>Integrate interactive scripts</li>
+        </ol>
+    </section>
+
+    <!-- Student Data Table -->
+    <section>
+        <h3>Enrolled Student Details</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A24126552258</td>
+                    <td>Priya Varma</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>A24126552260</td>
+                    <td>Sirisha Reddy</td>
+                    <td>CSM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br>
+
+    <!-- Registration Form Section -->
+    <section id="register">
+        <h3>Student Registration Form</h3>
+        <form action="#" method="get">
             
-            </section>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <br><br>
 
-            <section id="media">
-                <h2>Media Elements</h2> 
-                <br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            <br><br>
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqatL7qOndBjVzHY3Z_e1myYXCOtypWP0KH7Bod-92w&s=10" alt="img">
-                
-            </section>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
 
-        </article>
+            <label for="academic-year">Academic Year:</label><br> 
+            <input type="text" id="academic-year" name="academic-year" list="academic-years"> 
+              <datalist id="academic-years"> 
+                     <option value="1st year"> 
+                     <option value="2nd year"> 
+                     <option value="3rd year">
+                     <option value="4th year"> 
+              </datalist>
+             <br><br>
 
-        <hr>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="web" name="interest" value="web">
+            <label for="web">Web Development</label>
+            <input type="checkbox" id="ai" name="interest" value="ai">
+            <label for="ai">ML</label>
+            <br><br>
 
+            <button type="submit">Submit Form</button>
+            <button type="reset">Clear Form</button>
 
-
-        <aside>
-            <h3>Quick Links & Resources</h3>
-            <ul>
-                <li><a href="https://www.w3schools.com/html/" target="_blank">Learn HTML</a></li>
-                <li><a href="https://itsmybot.com/who-developed-html-css/">Do you know the <strong>The Father of HTML</strong>?</a></li>
-            </ul>
-        </aside>
-
-        <hr>
-
-        <!-- Form Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    
-                    <p>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name">
-                    </p>
-
-                    <p>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="name@example.com">
-                    </p>
-
-                    <p>
-                        <label for="topic">Topic:</label><br>
-                        <input type="text" id="topic" name="topic" list="topics">
-                        <datalist id="topics">
-                            <option value="HTML5 Accessibility">
-                            <option value="Semantic Layouts">
-                            <option value="Form Controls">
-                        </datalist>
-                    </p>
-
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="40"></textarea>
-                    </p>
-
-                    <p>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Reset</button>
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-
-    </main>
+        </form>
+    </section>
 
     <hr>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2026 about html5.</p>
-       
+        <p>&copy; 2026 Full Stack Web Development Laboratory. All rights reserved.</p>
     </footer>
 
 </body>
