@@ -1,9 +1,0 @@
-{
-    "name": "middleware-demo",
-    "version": "1.0.0",
-    "description": "Simple Express middleware example",
-    "main": "server.js",
-    "dependencies": {
-        "express": "^5.1.0"
-    }
-}
