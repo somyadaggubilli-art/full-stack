@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Styled Webpage</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Styled Webpage</h1>
+        <p>HTML5 Canvas and CSS3 Styling</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Three Content Cards -->
+    <div class="content">
+
+        <div class="card">
+            <h2>HTML5</h2>
+            <p>HTML is used to create the structure of a webpage.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>CSS3</h2>
+            <p>CSS is used to style and design webpages.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>JavaScript is used to make webpages interactive.</p>
+            <button>Learn More</button>
+        </div>
+
+    </div>
+
+    <!-- Canvas -->
+    <h2 class="canvas-title">HTML5 Canvas</h2>
+
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+
+    <script>
+    
+
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 120, 80);
+
+    ctx.beginPath();
+    ctx.arc(250, 90, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "green";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(330, 50);
+    ctx.lineTo(450, 120);
+    ctx.strokeStyle = "blue";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+
+    ctx.font = "24px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText("Somya", 180, 220);
+</script>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Somya </p>
+    </footer>
+
+    
+</body>
+</html>
+
